@@ -1,0 +1,24 @@
+- platform: sht31
+  name: Living Room
+  i2c_address: 0x44
+  monitored_conditions:
+    - temperature
+    - humidity
+- platform: bme280
+  name: Living Room
+  i2c_address: 0x76
+  monitored_conditions:
+    - pressure
+- platform: systemmonitor
+  resources:
+    - type: memory_use_percent
+    - type: load_1m
+    - type: ipv6_address
+      arg: wlan0
+    - type: processor_use
+- platform: qbittorrent
+  url: "http://[::1]:8081"
+  username: !secret qbun
+  password: !secret qbpw
+- platform: vcgencmd
+

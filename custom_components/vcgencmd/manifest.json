@@ -1,0 +1,8 @@
+{
+  "domain": "vcgencmd",
+  "name": "ARM temperature",
+  "documentation": "https://hass.example.com/custom_components/vcgencmd/",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": []
+}
