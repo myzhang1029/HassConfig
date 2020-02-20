@@ -1,8 +1,12 @@
 """VideoCore vcgencmd sensor integration."""
 from homeassistant.const import TEMP_CELSIUS
 from homeassistant.helpers.entity import Entity
-from subprocess import Popen, PIPE
+from homeassistant.util import Throttle
 
+from subprocess import Popen, PIPE
+from datetime import timedelta
+
+MIN_TIME_BETWEEN_UPDATES = timedelta(seconds=120)
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
     """Set up the sensor platform."""
@@ -31,6 +35,7 @@ class ARMVoltsSensor(Entity):
         """Return the unit of measurement."""
         return "V"
 
+    @Throttle(MIN_TIME_BETWEEN_UPDATES)
     def update(self):
         """Fetch new state data for the sensor."""
         proc = Popen(["vcgencmd", "measure_volts"], stdout=PIPE, stderr=PIPE)
@@ -59,6 +64,7 @@ class ARMFreqSensor(Entity):
         """Return the unit of measurement."""
         return "MHz"
 
+    @Throttle(MIN_TIME_BETWEEN_UPDATES)
     def update(self):
         """Fetch new state data for the sensor."""
         proc = Popen(["vcgencmd", "measure_clock", "arm"], stdout=PIPE, stderr=PIPE)
@@ -87,6 +93,7 @@ class ARMTempSensor(Entity):
         """Return the unit of measurement."""
         return TEMP_CELSIUS
 
+    @Throttle(MIN_TIME_BETWEEN_UPDATES)
     def update(self):
         """Fetch new state data for the sensor."""
         proc = Popen(["vcgencmd", "measure_temp"], stdout=PIPE, stderr=PIPE)

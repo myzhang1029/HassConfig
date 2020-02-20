@@ -21,4 +21,4 @@
   username: !secret qbun
   password: !secret qbpw
 - platform: vcgencmd
-
+- platform: moon

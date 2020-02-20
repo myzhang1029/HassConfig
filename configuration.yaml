@@ -5,13 +5,14 @@ homeassistant:
   latitude: !secret lati
   longitude: !secret long
   elevation: !secret elev
+  name: Home
   temperature_unit: C
   time_zone: Asia/Shanghai
   unit_system: metric
   customize: !include customize.yaml
 
 logger:
-  default: debug
+  default: info
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 http:
@@ -20,6 +21,7 @@ http:
 neato:
   username: !secret neun
   password: !secret nepw
+  vendor: neato
 
 #dyson:
 #  username: !secret dyun
