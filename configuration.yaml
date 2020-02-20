@@ -18,18 +18,18 @@ logger:
 http:
   base_url: "*:8123"
 
-neato:
-  username: !secret neun
-  password: !secret nepw
-  vendor: neato
+#neato:
+#  username: !secret neun
+#  password: !secret nepw
+#  vendor: neato
 
-#dyson:
-#  username: !secret dyun
-#  password: !secret dypw
-#  language: CN
-#  devices:
-#    - device_id: !secret dyid
-#      device_ip: 192.168.1.111
+dyson:
+  username: !secret dyun
+  password: !secret dypw
+  language: CN
+  devices:
+    - device_id: !secret dyid
+      device_ip: 192.168.1.111
 
 # Text to speech
 tts:
