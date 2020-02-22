@@ -16,6 +16,7 @@
     - type: ipv6_address
       arg: wlan0
     - type: processor_use
+    - type: last_boot
 - platform: qbittorrent
   url: "http://[::1]:8081"
   username: !secret qbun

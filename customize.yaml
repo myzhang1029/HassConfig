@@ -1,4 +1,175 @@
-sensor.living_room_pressure:
-  unit_of_measurement: hPa
 binary_sensor.updater:
   hidden: true
+
+sensor.last_update_trigger:
+  hidden: true
+
+sensor.last_update_trigger_2:
+  hidden: true
+
+device_tracker.iphone:
+  friendly_name: "iPhone-zmy"
+
+device_tracker.zmys_iphone:
+  friendly_name: "iPhone-ydm"
+
+device_tracker.iphone_2:
+  friendly_name: "iPhone-zmy"
+
+device_tracker.zmys_iphone_2:
+  friendly_name: "iPhone-ydm"
+
+device_tracker.yuan_dong_mei_de_ipad:
+  friendly_name: "iPad mini"
+
+device_tracker.mai_mai_de_ipad:
+  friendly_name: "iPad Air"
+
+device_tracker.myzs_apple_watch:
+  friendly_name: "Apple Watch"
+
+sensor.average_active_pace:
+  friendly_name: "Average Active Pace-zmy"
+  unit_of_measurement: "m/s"
+
+sensor.average_active_pace_2:
+  friendly_name: "Average Active Pace-ydm"
+  unit_of_measurement: "m/s"
+
+sensor.distance:
+  friendly_name: "Distance-zmy"
+  unit_of_measurement: "m"
+
+sensor.distance_2:
+  friendly_name: "Distance-ydm"
+  unit_of_measurement: "m"
+
+sensor.activity:
+  friendly_name: "Activity-zmy"
+
+sensor.activity_2:
+  friendly_name: "Activity-ydm"
+
+sensor.battery_level:
+  friendly_name: "Battery Level-zmy"
+  unit_of_measurement: "%"
+
+sensor.battery_level_2:
+  friendly_name: "Battery Level-ydm"
+  unit_of_measurement: "%"
+
+sensor.battery_state:
+  friendly_name: "Battery State-zmy"
+
+sensor.battery_state_2:
+  friendly_name: "Battery State-ydm"
+
+sensor.floors_ascended:
+  friendly_name: "Floors Ascended-zmy"
+  unit_of_measurement: "floors"
+
+sensor.floors_ascended_2:
+  friendly_name: "Floors Ascended-ydm"
+  unit_of_measurement: "floors"
+
+sensor.floors_descended:
+  friendly_name: "Floors Descended-zmy"
+  unit_of_measurement: "floors"
+
+sensor.floors_descended_2:
+  friendly_name: "Floors Descended-ydm"
+  unit_of_measurement: "floors"
+
+sensor.steps:
+  friendly_name: "Steps-zmy"
+  unit_of_measurement: "steps"
+
+sensor.steps_2:
+  friendly_name: "Steps-ydm"
+  unit_of_measurement: "steps"
+
+sensor.bssid:
+  friendly_name: "BSSID-zmy"
+  hidden: true
+
+sensor.bssid_2:
+  friendly_name: "BSSID-ydm"
+  hidden: true
+
+sensor.connection_type:
+  friendly_name: "Connection Type-zmy"
+
+sensor.connection_type_2:
+  friendly_name: "Connection Type-ydm"
+
+sensor.ssid:
+  friendly_name: "SSID-zmy"
+
+sensor.ssid_2:
+  friendly_name: "SSID-ydm"
+
+sensor.sim_1:
+  friendly_name: "SIM1-zmy"
+
+sensor.sim_1_2:
+  friendly_name: "SIM1-ydm"
+
+sensor.geocoded_location:
+  friendly_name: "Geocoded Location-zmy"
+
+sensor.geocoded_location_2:
+  friendly_name: "Geocoded Location-ydm"
+
+sensor.iphone_battery_state:
+  friendly_name: "Battery State-zmy(iCloud)"
+  unit_of_measurement: "%"
+
+sensor.zmys_iphone_battery_state:
+  friendly_name: "Battery State-ydm(iCloud)"
+  unit_of_measurement: "%"
+
+sensor.yuan_dong_mei_de_ipad_battery_state:
+  friendly_name: "iPad Mini Battery State(iCloud)"
+  unit_of_measurement: "%"
+
+sensor.mai_mai_de_ipad_battery_state:
+  friendly_name: "iPad Air Battery State(iCloud)"
+  unit_of_measurement: "%"
+
+sensor.myzs_apple_watch_battery_state:
+  friendly_name: "Apple Watch Battery State(iCloud)"
+  unit_of_measurement: "%"
+
+sensor.ke_ting_humidity:
+  friendly_name: "Dyson湿度"
+  unit_of_measurement: "%"
+
+sensor.ke_ting_temperature:
+  friendly_name: "Dyson温度"
+  unit_of_measurement: "°C"
+
+air_quality.ke_ting:
+  friendly_name: "Dyson空气质量"
+  unit_of_measurement: ""
+
+sensor.living_room_humidity:
+  friendly_name: "客厅湿度"
+
+sensor.living_room_temperature:
+  friendly_name: "客厅温度"
+
+sensor.living_room_pressure:
+  friendly_name: "客厅气压"
+  unit_of_measurement: hPa
+
+sensor.ipv6_address_wlan0:
+  friendly_name: "IPv6地址"
+
+sensor.moon:
+  friendly_name: "月相"
+
+sun.sun:
+  friendly_name: "太阳"
+
+weather.home:
+  friendly_name: "天气"
