@@ -7,6 +7,9 @@ sensor.last_update_trigger:
 sensor.last_update_trigger_2:
   hidden: true
 
+sensor.last_update_trigger_3:
+  hidden: true
+
 device_tracker.iphone:
   friendly_name: "iPhone-zmy"
 
@@ -20,7 +23,10 @@ device_tracker.zmys_iphone_2:
   friendly_name: "iPhone-ydm"
 
 device_tracker.yuan_dong_mei_de_ipad:
-  friendly_name: "iPad mini"
+  friendly_name: "iPad Mini"
+
+device_tracker.yuan_dong_mei_de_ipad_2:
+  friendly_name: "iPad Mini"
 
 device_tracker.mai_mai_de_ipad:
   friendly_name: "iPad Air"
@@ -132,6 +138,26 @@ sensor.yuan_dong_mei_de_ipad_battery_state:
   friendly_name: "iPad Mini Battery State(iCloud)"
   unit_of_measurement: "%"
 
+sensor.battery_level_3:
+  friendly_name: "iPad Mini Battery Level"
+  unit_of_measurement": "%"
+
+sensor.battery_state_3:
+  friendly_name: "iPad Mini Battery State"
+
+sensor.bssid_3:
+  friendly_name: "iPad Mini BSSID"
+  hidden: true
+
+sensor.connection_type_3:
+  friendly_name: "iPad Mini Connection Type"
+
+sensor.ssid_3:
+  friendly_name: "iPad Mini SSID"
+
+sensor.geocoded_location_3:
+  friendly_name: "iPad Mini Geocoded Location"
+
 sensor.mai_mai_de_ipad_battery_state:
   friendly_name: "iPad Air Battery State(iCloud)"
   unit_of_measurement: "%"
@@ -139,6 +165,17 @@ sensor.mai_mai_de_ipad_battery_state:
 sensor.myzs_apple_watch_battery_state:
   friendly_name: "Apple Watch Battery State(iCloud)"
   unit_of_measurement: "%"
+
+sensor.qbittorrent_status:
+  friendly_name: "qBittorrent Status"
+
+sensor.qbittorrent_up_speed:
+  friendly_name: "qBittorrent Up Speed"
+  icon: "mdi:arrow-up-bold"
+
+sensor.qbittorrent_down_speed:
+  friendly_name: "qBittorrent Down Speed"
+  icon: "mdi:arrow-down-bold"
 
 sensor.ke_ting_humidity:
   friendly_name: "Dyson湿度"
@@ -151,12 +188,16 @@ sensor.ke_ting_temperature:
 air_quality.ke_ting:
   friendly_name: "Dyson空气质量"
   unit_of_measurement: ""
+  device_class: sensor
+  icon: "mdi:cloud"
 
 sensor.living_room_humidity:
   friendly_name: "客厅湿度"
+  icon: "mdi:water-percent"
 
 sensor.living_room_temperature:
   friendly_name: "客厅温度"
+  icon: "mdi:thermometer"
 
 sensor.living_room_pressure:
   friendly_name: "客厅气压"
@@ -164,6 +205,20 @@ sensor.living_room_pressure:
 
 sensor.ipv6_address_wlan0:
   friendly_name: "IPv6地址"
+
+sensor.arm_frequency:
+  friendly_name: "RPi频率"
+  unit_of_measurement: "MHz"
+  icon: "mdi:memory"
+
+sensor.arm_temperature:
+  friendly_name: "RPi CPU温度"
+  icon: "mdi:thermometer"
+
+sensor.arm_voltage:
+  friendly_name: "RPi CPU电压"
+  unit_of_measurement: "V"
+  icon: "mdi:weather-lightning"
 
 sensor.moon:
   friendly_name: "月相"
@@ -173,3 +228,4 @@ sun.sun:
 
 weather.home:
   friendly_name: "天气"
+

@@ -1,0 +1,60 @@
+title: Home
+views:
+  - title: Home
+    path: default_view
+    badges:
+      - entity: person.zhang_maiyun
+      - entity: sensor.battery_state
+      - entity: sensor.battery_level
+      - entity: sensor.iphone_battery_state
+      - entity: sensor.myzs_apple_watch_battery_state
+      - entity: person.yuan_dongmei
+      - entity: sensor.battery_state_2
+      - entity: sensor.battery_level_2
+      - entity: sensor.zmys_iphone_battery_state
+      - entity: sensor.yuan_dong_mei_de_ipad_battery_state
+      - entity: sensor.mai_mai_de_ipad_battery_state
+    cards:
+      - type: entities
+        title: 系统状态
+        entities:
+          - entity: sensor.arm_temperature
+          - entity: sensor.arm_voltage
+          - entity: sensor.arm_frequency
+          - entity: sensor.load_1m
+          - entity: sensor.processor_use
+          - entity: sensor.memory_use_percent
+          - entity: sensor.last_boot
+          - entity: sensor.ipv6_address_wlan0
+          - entity: sensor.qbittorrent_status
+          - entity: sensor.qbittorrent_up_speed
+          - entity: sensor.qbittorrent_down_speed
+        show_header_toggle: false
+      - entity: weather.home
+        type: weather-forecast
+      - title: Dyson
+        type: entities
+        show_header_toggle: false
+        entities:
+          - fan.ke_ting
+          - air_quality.ke_ting
+          - sensor.ke_ting_temperature
+          - sensor.ke_ting_humidity
+      - type: sensor
+        entity: sensor.living_room_temperature
+        graph: line
+        name: 客厅温度
+      - type: sensor
+        entity: sensor.living_room_humidity
+        graph: line
+      - type: sensor
+        entity: sensor.living_room_pressure
+        graph: line
+      - type: entities
+        entities:
+          - entity: sun.sun
+          - entity: sensor.moon
+      - type: entities
+        title: Scene
+        entities:
+          - entity: scene.back_home

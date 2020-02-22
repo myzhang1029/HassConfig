@@ -1,1 +1,42 @@
-[]
+- id: '1582352141440'
+  alias: Home Music
+  description: ''
+  trigger:
+  - entity_id: person.yuan_dongmei
+    for: 1 min
+    from: Away
+    platform: state
+    to: Hone
+  - entity_id: person.yuan_dongmei
+    for: 1 min
+    from: Away
+    platform: state
+    to: Home
+  condition: []
+  action: []
+- id: '1582352141441'
+  alias: Sunset Notification
+  trigger:
+  - event: sunset
+    offset: -00:30
+    platform: sun
+  action:
+  - data:
+      message: Beautiful sunset!
+    service: persistent_notification.create
+  - delay: 0:35
+  - data:
+      message: Oh wow you really missed something great.
+    service: notify.notify
+- id: '1582353421791'
+  alias: Full Moon Notification
+  description: ''
+  trigger:
+  - entity_id: sensor.moon
+    platform: state
+    to: full_moon
+  condition: []
+  action:
+  - data:
+      message: Beautiful sunset!
+    service: notify.notify
