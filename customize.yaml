@@ -7,9 +7,6 @@ sensor.last_update_trigger:
 sensor.last_update_trigger_2:
   hidden: true
 
-sensor.last_update_trigger_3:
-  hidden: true
-
 device_tracker.iphone:
   friendly_name: "iPhone-zmy"
 
@@ -25,14 +22,14 @@ device_tracker.zmys_iphone_2:
 device_tracker.yuan_dong_mei_de_ipad:
   friendly_name: "iPad Mini"
 
-device_tracker.yuan_dong_mei_de_ipad_2:
-  friendly_name: "iPad Mini"
-
 device_tracker.mai_mai_de_ipad:
   friendly_name: "iPad Air"
 
 device_tracker.myzs_apple_watch:
   friendly_name: "Apple Watch"
+
+device_tracker.volvo_lvypd10d1lp142664:
+  friendly_name: "车"
 
 sensor.average_active_pace:
   friendly_name: "Average Active Pace-zmy"
@@ -138,26 +135,6 @@ sensor.yuan_dong_mei_de_ipad_battery_state:
   friendly_name: "iPad Mini Battery State(iCloud)"
   unit_of_measurement: "%"
 
-sensor.battery_level_3:
-  friendly_name: "iPad Mini Battery Level"
-  unit_of_measurement": "%"
-
-sensor.battery_state_3:
-  friendly_name: "iPad Mini Battery State"
-
-sensor.bssid_3:
-  friendly_name: "iPad Mini BSSID"
-  hidden: true
-
-sensor.connection_type_3:
-  friendly_name: "iPad Mini Connection Type"
-
-sensor.ssid_3:
-  friendly_name: "iPad Mini SSID"
-
-sensor.geocoded_location_3:
-  friendly_name: "iPad Mini Geocoded Location"
-
 sensor.mai_mai_de_ipad_battery_state:
   friendly_name: "iPad Air Battery State(iCloud)"
   unit_of_measurement: "%"
@@ -228,4 +205,88 @@ sun.sun:
 
 weather.home:
   friendly_name: "天气"
+
+binary_sensor.lvypd10d1lp142664_bulbs:
+  friendly_name: "大灯"
+
+binary_sensor.lvypd10d1lp142664_engine:
+  friendly_name: "引擎"
+
+binary_sensor.lvypd10d1lp142664_doors:
+  friendly_name: "门"
+
+binary_sensor.lvypd10d1lp142664_front_left_door:
+  friendly_name: "左前门"
+
+binary_sensor.lvypd10d1lp142664_front_right_door:
+  friendly_name: "右前门"
+
+binary_sensor.lvypd10d1lp142664_rear_left_door:
+  friendly_name: "左后门"
+
+binary_sensor.lvypd10d1lp142664_rear_right_door:
+  friendly_name: "右后门"
+
+binary_sensor.lvypd10d1lp142664_windows:
+  friendly_name: "窗子"
+
+binary_sensor.lvypd10d1lp142664_front_left_window:
+  friendly_name: "左前窗"
+
+binary_sensor.lvypd10d1lp142664_front_right_window:
+  friendly_name: "右前窗"
+
+binary_sensor.lvypd10d1lp142664_rear_left_window:
+  friendly_name: "左后窗"
+
+binary_sensor.lvypd10d1lp142664_rear_right_window:
+  friendly_name: "右后窗"
+
+binary_sensor.lvypd10d1lp142664_front_left_tyre:
+  friendly_name: "左前胎"
+
+binary_sensor.lvypd10d1lp142664_front_right_tyre:
+  friendly_name: "右前胎"
+
+binary_sensor.lvypd10d1lp142664_rear_left_tyre:
+  friendly_name: "左后胎"
+
+binary_sensor.lvypd10d1lp142664_rear_right_tyre:
+  friendly_name: "右后胎"
+
+binary_sensor.lvypd10d1lp142664_hood:
+  friendly_name: "引擎盖"
+
+binary_sensor.lvypd10d1lp142664_service:
+  friendly_name: "服务"
+
+binary_sensor.lvypd10d1lp142664_washer_fluid:
+  friendly_name: "雨刮液"
+
+binary_sensor.lvypd10d1lp142664_brake_fluid:
+  friendly_name: "刹车液"
+
+sensor.lvypd10d1lp142664_fuel_amount:
+  friendly_name: "油量"
+
+sensor.lvypd10d1lp142664_fuel_consumption:
+  friendly_name: "油耗"
+
+sensor.lvypd10d1lp142664_fuel_level:
+  friendly_name: "油量(百分比)"
+
+sensor.lvypd10d1lp142664_last_trip:
+  friendly_name: "上一次行程"
+
+sensor.lvypd10d1lp142664_odometer:
+  friendly_name: "里程表"
+
+sensor.lvypd10d1lp142664_range:
+  friendly_name: "续航里程"
+
+sensor.lvypd10d1lp142664_trip_meter_1:
+  friendly_name: "短距离里程表(TM)"
+
+sensor.lvypd10d1lp142664_trip_meter_2:
+  friendly_name: "短距离里程表(TA)"
 

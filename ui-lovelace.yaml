@@ -58,3 +58,17 @@ views:
         title: Scene
         entities:
           - entity: scene.back_home
+      - type: entities
+        title: 车
+        show_header_toggle: false
+        entities:
+          - entity: device_tracker.volvo_lvypd10d1lp142664
+          - entity: binary_sensor.lvypd10d1lp142664_doors
+          - entity: binary_sensor.lvypd10d1lp142664_windows
+          - entity: binary_sensor.lvypd10d1lp142664_engine
+          - entity: binary_sensor.lvypd10d1lp142664_bulbs
+          - entity: binary_sensor.lvypd10d1lp142664_service
+          - entity: sensor.lvypd10d1lp142664_fuel_amount
+          - entity: sensor.lvypd10d1lp142664_last_trip
+          - entity: sensor.lvypd10d1lp142664_range
+          - entity: sensor.lvypd10d1lp142664_odometer

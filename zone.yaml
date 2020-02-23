@@ -1,0 +1,21 @@
+- name: 家
+  latitude: !secret lati
+  longitude: !secret long
+  radius: 200
+  icon: "mdi:home"
+- name: 办公室
+  latitude: !secret lati_work
+  longitude: !secret long_work
+  radius: 100
+  icon: "mdi:office-building"
+- name: 学校
+  latitude: !secret lati_school
+  longitude: !secret long_school
+  radius: 100
+  icon: "mdi:school"
+- name: 停车场
+  latitude: !secret lati_parking
+  longitude: !secret long_parking
+  radius: 100
+  icon: "mdi:parking"
+
