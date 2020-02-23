@@ -34,6 +34,8 @@ dyson:
     - device_id: !secret dyid
       device_ip: 192.168.1.111
 
+shopping_list:
+
 volvooncall:
   username: !secret vvun
   password: !secret vvpw
