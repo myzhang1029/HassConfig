@@ -39,6 +39,8 @@ volvooncall:
   password: !secret vvpw
   region: cn
 
+shopping_list:
+
 # Text to speech
 tts:
   - platform: google_translate
