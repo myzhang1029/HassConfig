@@ -59,6 +59,11 @@ views:
         entities:
           - entity: scene.back_home
       - type: entities
+        title: Shodan
+        show_header_toggle: false
+        entities:
+          - entity: sensor.shodan_sensor
+      - type: entities
         title: 车
         show_header_toggle: false
         entities:
