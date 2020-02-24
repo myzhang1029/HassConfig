@@ -9,6 +9,9 @@
   i2c_address: 0x76
   monitored_conditions:
     - pressure
+- platform: shodan
+  api_key: !secret shodanapi
+  query: !secret shodanqry
 - platform: systemmonitor
   resources:
     - type: memory_use_percent

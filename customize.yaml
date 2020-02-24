@@ -290,3 +290,5 @@ sensor.lvypd10d1lp142664_trip_meter_1:
 sensor.lvypd10d1lp142664_trip_meter_2:
   friendly_name: "短距离里程表(TA)"
 
+sensor.shodan_sensor:
+  friendly_name: "Shodan"

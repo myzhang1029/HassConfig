@@ -25,6 +25,7 @@ homeassistant:
   unit_system: metric
   customize: !include customize.yaml
   auth_providers:
+    - type: homeassistant
     - type: trusted_networks
       trusted_networks:
         - 127.0.0.1
@@ -33,10 +34,9 @@ homeassistant:
         - !secret nw2
         - !secret nw3
         - !secret nw4
-    - type: homeassistant
 
 http:
-  base_url: "*:8123"
+  server_host: "*"
 
 logbook:
 
