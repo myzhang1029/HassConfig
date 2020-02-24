@@ -42,6 +42,7 @@ icloud:
   - username: !secret icun
     password: !secret icpw
 
+imac_music:
 logbook:
 
 logger:
@@ -50,8 +51,8 @@ logger:
 lovelace:
   mode: yaml
 
-mobile_app:
 map:
+mobile_app:
 
 #neato:
 #  username: !secret neun

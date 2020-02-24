@@ -292,3 +292,11 @@ sensor.lvypd10d1lp142664_trip_meter_2:
 
 sensor.shodan_sensor:
   friendly_name: "Shodan"
+
+imac_music.queue_position:
+  friendly_name: "播放序列号"
+  icon: "mdi:play"
+
+imac_music.queue_name:
+  friendly_name: "播放序列开始名"
+  icon: "mdi:play"
