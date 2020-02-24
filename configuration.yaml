@@ -38,6 +38,10 @@ homeassistant:
 http:
   server_host: "*"
 
+icloud:
+  - username: !secret icun
+    password: !secret icpw
+
 logbook:
 
 logger:
