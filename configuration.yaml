@@ -76,5 +76,6 @@ volvooncall:
   region: cn
   mutable: false
 
+weather:
 zeroconf:
 zone: !include zone.yaml

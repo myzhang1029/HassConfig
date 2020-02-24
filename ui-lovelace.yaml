@@ -30,7 +30,7 @@ views:
           - entity: sensor.qbittorrent_up_speed
           - entity: sensor.qbittorrent_down_speed
         show_header_toggle: false
-      - entity: weather.home
+      - entity: weather.jia
         type: weather-forecast
       - title: Dyson
         type: entities
