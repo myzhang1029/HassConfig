@@ -300,3 +300,7 @@ imac_music.queue_position:
 imac_music.queue_name:
   friendly_name: "播放序列开始名"
   icon: "mdi:play"
+
+imac_music.status:
+  friendly_name: "播放状态"
+  icon: "mdi:play"

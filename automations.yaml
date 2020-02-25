@@ -13,7 +13,9 @@
     platform: state
     to: Home
   condition: []
-  action: []
+  action:
+  - service: imac_music.shuffle
+  - service: fan.turn_on
 - id: '1582352141441'
   alias: Sunset Notification
   trigger:

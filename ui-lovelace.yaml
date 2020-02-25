@@ -15,6 +15,25 @@ views:
       - entity: sensor.yuan_dong_mei_de_ipad_battery_state
       - entity: sensor.mai_mai_de_ipad_battery_state
     cards:
+      - type: shopping-list
+      - type: entity-button
+        entity: automation.home_music
+        tap_action:
+          action: call-service
+          service: imac_music.shuffle
+        hold_action:
+          action: more-info
+        icon: 'mdi:play'
+        name: Shuffle
+      - type: entity-button
+        entity: automation.home_music
+        tap_action:
+          action: call-service
+          service: imac_music.stop
+        hold_action:
+          action: more-info
+        icon: 'mdi:stop'
+        name: Stop
       - type: entities
         title: 系统状态
         entities:
@@ -54,10 +73,8 @@ views:
         entities:
           - entity: sun.sun
           - entity: sensor.moon
-      - type: entities
-        title: Scene
-        entities:
-          - entity: scene.back_home
+      #- type: entities
+        #title: Scene
       - type: entities
         title: Shodan
         show_header_toggle: false
