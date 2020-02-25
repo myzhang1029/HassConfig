@@ -1,7 +1,6 @@
 {
   "domain": "imac_music",
   "name": "iMac Music",
-  "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/",
-  "codeowners": []
+  "documentation": "https://github.com/myzhang1029/HassConfig/custom_components/README.md",
+  "codeowners": ["@myzhang1029"]
 }

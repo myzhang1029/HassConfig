@@ -1,17 +1,19 @@
+- platform: bme280
+  name: Living Room
+  i2c_address: 0x76
+  monitored_conditions:
+    - pressure
+- platform: rpi_power
+  text_state: true
+- platform: shodan
+  api_key: !secret shodanapi
+  query: !secret shodanqry
 - platform: sht31
   name: Living Room
   i2c_address: 0x44
   monitored_conditions:
     - temperature
     - humidity
-- platform: bme280
-  name: Living Room
-  i2c_address: 0x76
-  monitored_conditions:
-    - pressure
-- platform: shodan
-  api_key: !secret shodanapi
-  query: !secret shodanqry
 - platform: systemmonitor
   resources:
     - type: memory_use_percent

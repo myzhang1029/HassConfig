@@ -13,6 +13,10 @@ dyson:
 
 frontend:
 group: !include groups.yaml
+
+hacs:
+  token: !secret ghtoken
+
 history:
 
 homeassistant:
@@ -82,5 +86,11 @@ volvooncall:
   mutable: false
 
 weather:
+
+wwlln:
+  radius: 500
+  latitude: !secret lati
+  longitude: !secret long
+
 zeroconf:
 zone: !include zone.yaml

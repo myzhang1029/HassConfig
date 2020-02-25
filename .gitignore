@@ -8,9 +8,10 @@
 !*.md
 !.travis.yml
 !custom_components/
-!custom_components/*
-!custom_components/*/*.py
-!custom_components/*/*.json
+!custom_components/**
+
+# Ignore pycache
+__pycache__
 
 # Ignore folders.
 .storage
