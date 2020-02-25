@@ -3,13 +3,9 @@
   description: ''
   trigger:
   - entity_id: person.yuan_dongmei
-    for: 1 min
-    from: Away
     platform: state
-    to: Hone
+    to: Honme
   - entity_id: person.yuan_dongmei
-    for: 1 min
-    from: Away
     platform: state
     to: Home
   condition: []
@@ -55,9 +51,11 @@
   action:
   - service: persistent_notification.create
     data_template:
-      message: "RPI Power reported {{ states.sensor.rpi_power_status.state }}. The state had changed from {{ trigger.from_state.state }} "
+      message: 'RPI Power reported {{ states.sensor.rpi_power_status.state }}. The
+        state had changed from {{ trigger.from_state.state }} '
       title: Power Supply Issue
   - service: notify.notify
     data_template:
-      message: "RPI Power reported {{ states.sensor.rpi_power_status.state }}. The state had  changed from {{ trigger.from_state.state }}"
+      message: RPI Power reported {{ states.sensor.rpi_power_status.state }}. The
+        state had  changed from {{ trigger.from_state.state }}
       title: Power Supply Issue
