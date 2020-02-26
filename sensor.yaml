@@ -20,6 +20,14 @@
     - type: load_1m
     - type: ipv6_address
       arg: wlan0
+    - type: throughput_network_in
+      arg: wlan0
+    - type: throughput_network_out
+      arg: wlan0
+    - type: throughput_network_in
+      arg: eth0
+    - type: throughput_network_out
+      arg: eth0
     - type: processor_use
     - type: last_boot
 - platform: qbittorrent

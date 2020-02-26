@@ -45,6 +45,10 @@ views:
           - entity: sensor.memory_use_percent
           - entity: sensor.last_boot
           - entity: sensor.ipv6_address_wlan0
+          - entity: sensor.network_throughput_in_wlan0
+          - entity: sensor.network_throughput_out_wlan0
+          - entity: sensor.network_throughput_in_eth0
+          - entity: sensor.network_throughput_out_eth0
           - entity: sensor.qbittorrent_status
           - entity: sensor.qbittorrent_up_speed
           - entity: sensor.qbittorrent_down_speed

@@ -183,6 +183,18 @@ sensor.living_room_pressure:
 sensor.ipv6_address_wlan0:
   friendly_name: "IPv6地址"
 
+sensor.network_throughput_out_wlan0:
+  friendly_name: "WLAN出口量"
+
+sensor.network_throughput_in_wlan0:
+  friendly_name: "WLAN入口量"
+
+sensor.network_throughput_out_eth0:
+  friendly_name: "Ethernet出口量"
+
+sensor.network_throughput_in_eth0:
+  friendly_name: "Ethernet入口量"
+
 sensor.arm_frequency:
   friendly_name: "RPi频率"
   unit_of_measurement: "MHz"
