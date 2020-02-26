@@ -143,17 +143,6 @@ sensor.myzs_apple_watch_battery_state:
   friendly_name: "Apple Watch Battery State(iCloud)"
   unit_of_measurement: "%"
 
-sensor.qbittorrent_status:
-  friendly_name: "qBittorrent Status"
-
-sensor.qbittorrent_up_speed:
-  friendly_name: "qBittorrent Up Speed"
-  icon: "mdi:arrow-up-bold"
-
-sensor.qbittorrent_down_speed:
-  friendly_name: "qBittorrent Down Speed"
-  icon: "mdi:arrow-down-bold"
-
 sensor.ke_ting_humidity:
   friendly_name: "Dyson湿度"
   unit_of_measurement: "%"

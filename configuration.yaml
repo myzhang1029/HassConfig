@@ -7,9 +7,6 @@ dyson:
   username: !secret dyun
   password: !secret dypw
   language: CN
-  devices:
-    - device_id: !secret dyid
-      device_ip: 192.168.1.111
 
 frontend:
 group: !include groups.yaml

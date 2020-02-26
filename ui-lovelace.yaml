@@ -49,9 +49,6 @@ views:
           - entity: sensor.network_throughput_out_wlan0
           - entity: sensor.network_throughput_in_eth0
           - entity: sensor.network_throughput_out_eth0
-          - entity: sensor.qbittorrent_status
-          - entity: sensor.qbittorrent_up_speed
-          - entity: sensor.qbittorrent_down_speed
         show_header_toggle: false
       - entity: weather.jia
         type: weather-forecast
