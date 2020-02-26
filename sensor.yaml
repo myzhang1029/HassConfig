@@ -19,11 +19,7 @@
     - type: memory_use_percent
     - type: load_1m
     - type: ipv6_address
-      arg: wlan0
-    - type: throughput_network_in
-      arg: wlan0
-    - type: throughput_network_out
-      arg: wlan0
+      arg: eth0
     - type: throughput_network_in
       arg: eth0
     - type: throughput_network_out

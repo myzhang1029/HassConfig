@@ -44,9 +44,7 @@ views:
           - entity: sensor.processor_use
           - entity: sensor.memory_use_percent
           - entity: sensor.last_boot
-          - entity: sensor.ipv6_address_wlan0
-          - entity: sensor.network_throughput_in_wlan0
-          - entity: sensor.network_throughput_out_wlan0
+          - entity: sensor.ipv6_address_eth0
           - entity: sensor.network_throughput_in_eth0
           - entity: sensor.network_throughput_out_eth0
         show_header_toggle: false
