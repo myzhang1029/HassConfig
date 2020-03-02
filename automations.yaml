@@ -33,29 +33,44 @@
   - entity_id: sensor.moon
     platform: state
     to: full_moon
-  condition: []
+  condition:
+  - after: '17:00'
+    condition: time
   action:
   - data:
-      message: Beautiful sunset!
+      message: Full moon tonight!
     service: notify.notify
+  - data:
+      message: Full moon tonight!
+    service: persistent_notification.create
 - id: rpi_power_issue
   alias: Power Problem Notification
   trigger:
-  - platform: numeric_state
+  - above: '0'
     entity_id: sensor.rpi_power_status
+    for: 0:05:00
+    platform: numeric_state
     value_template: '{{ state.attributes.value }}'
-    above: 0
-    for:
-      minutes: 5
   condition:
   action:
-  - service: persistent_notification.create
-    data_template:
-      message: 'RPI Power reported {{ states.sensor.rpi_power_status.state }}. The
-        state had changed from {{ trigger.from_state.state }} '
+  - data_template:
+      message: '{{ states.sensor.rpi_power_status.state }}.'
       title: Power Supply Issue
-  - service: notify.notify
-    data_template:
-      message: RPI Power reported {{ states.sensor.rpi_power_status.state }}. The
-        state had  changed from {{ trigger.from_state.state }}
+    service: persistent_notification.create
+  - data_template:
+      message: '{{ states.sensor.rpi_power_status.state }}.'
       title: Power Supply Issue
+    service: notify.notify
+- id: '1582970027924'
+  alias: Purify Air
+  description: ''
+  trigger:
+  - above: '95'
+    entity_id: air_quality.ke_ting
+    for: 0:01:00
+    platform: numeric_state
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.ke_ting
+    service: fan.turn_on
