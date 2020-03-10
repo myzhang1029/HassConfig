@@ -61,6 +61,14 @@ mobile_app:
 #  vendor: neato
 
 person:
+
+recorder:
+  db_url: "postgresql://@/hass"
+  purge_keep_days: 2
+  exclude:
+    domains:
+      - updater
+
 script: !include scripts.yaml
 scene: !include scenes.yaml
 sensor: !include sensor.yaml
@@ -83,11 +91,5 @@ volvooncall:
   mutable: false
 
 weather:
-
-wwlln:
-  radius: 500
-  latitude: !secret lati
-  longitude: !secret long
-
 zeroconf:
 zone: !include zone.yaml
