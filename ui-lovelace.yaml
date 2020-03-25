@@ -35,6 +35,15 @@ views:
         icon: 'mdi:stop'
         name: Stop
       - type: entities
+        title: 空气质量
+        entities:
+          - entity: sensor.ke_ting_air_quality_index
+          - entity: sensor.ke_ting_particulate_matter_10
+          - entity: sensor.ke_ting_particulate_matter_2_5
+          - entity: sensor.ke_ting_nitrogen_dioxide
+          - entity: sensor.ke_ting_volatile_organic_compounds
+        show_header_toggle: false
+      - type: entities
         title: 系统状态
         entities:
           - entity: sensor.arm_temperature
