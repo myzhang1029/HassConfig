@@ -43,7 +43,6 @@ icloud:
   - username: !secret icun
     password: !secret icpw
 
-imac_music:
 logbook:
 
 logger:

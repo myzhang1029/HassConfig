@@ -56,10 +56,6 @@
   - data_template:
       message: '{{ states.sensor.rpi_power_status.state }}.'
       title: Power Supply Issue
-    service: persistent_notification.create
-  - data_template:
-      message: '{{ states.sensor.rpi_power_status.state }}.'
-      title: Power Supply Issue
     service: notify.notify
 - id: '1582970027924'
   alias: Purify Air
