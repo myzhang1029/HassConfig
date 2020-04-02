@@ -59,6 +59,20 @@ mobile_app:
 #  password: !secret nepw
 #  vendor: neato
 
+notify:
+  - name: sendmail
+    platform: smtp
+    server: smtp.office365.com
+    port: 587
+    timeout: 15
+    sender: !secret hmun
+    encryption: starttls
+    username: !secret hmun
+    password: !secret hmpw
+    recipient:
+      - !secret hmun
+    sender_name: Home Assistant
+
 person:
 
 recorder:

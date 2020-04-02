@@ -21,6 +21,9 @@
   action:
   - data:
       message: Beautiful sunset!
+    service: notify.sendmail
+  - data:
+      message: Beautiful sunset!
     service: persistent_notification.create
   - delay: 0:35
   - data:
@@ -39,7 +42,7 @@
   action:
   - data:
       message: Full moon tonight!
-    service: notify.notify
+    service: notify.sendmail
   - data:
       message: Full moon tonight!
     service: persistent_notification.create
@@ -53,10 +56,13 @@
     value_template: '{{ state.attributes.value }}'
   condition:
   action:
-  - data_template:
+  - data:
+      message: Raspberry Pi reported {{ states.sensor.rpi_power_status.state }}
+      title: Power Supply Issue
+    data_template:
       message: '{{ states.sensor.rpi_power_status.state }}.'
       title: Power Supply Issue
-    service: notify.notify
+    service: notify.sendmail
 - id: '1582970027924'
   alias: Purify Air
   description: ''
@@ -70,3 +76,7 @@
   - data: {}
     entity_id: fan.ke_ting
     service: fan.turn_on
+  - data:
+      message: The air is too dirty! Turning fan on.
+      title: Air Quality
+    service: notify.sendmail
