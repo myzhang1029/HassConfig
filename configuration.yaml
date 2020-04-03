@@ -11,9 +11,6 @@ dyson:
 frontend:
 group: !include groups.yaml
 
-hacs:
-  token: !secret ghtoken
-
 history:
 
 homeassistant:
