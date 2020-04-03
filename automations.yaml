@@ -1,17 +1,3 @@
-- id: '1582352141440'
-  alias: Home Music
-  description: ''
-  trigger:
-  - entity_id: person.yuan_dongmei
-    platform: state
-    to: Honme
-  - entity_id: person.yuan_dongmei
-    platform: state
-    to: Home
-  condition: []
-  action:
-  - service: imac_music.shuffle
-  - service: fan.turn_on
 - id: '1582352141441'
   alias: Sunset Notification
   trigger:
