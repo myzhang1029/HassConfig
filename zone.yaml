@@ -1,4 +1,4 @@
-- name: 家
+- name: Home
   latitude: !secret lati
   longitude: !secret long
   radius: 200

@@ -20,7 +20,7 @@ homeassistant:
   latitude: !secret lati
   longitude: !secret long
   elevation: !secret elev
-  name: 家
+  name: Home
   temperature_unit: C
   time_zone: Asia/Shanghai
   unit_system: metric
