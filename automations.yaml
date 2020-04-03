@@ -71,7 +71,10 @@
     entity_id: air_quality.ke_ting
     for: 0:01:00
     platform: numeric_state
-  condition: []
+  condition:
+  - condition: state
+    entity_id: fan.ke_ting
+    state: 'Off'
   action:
   - data: {}
     entity_id: fan.ke_ting
