@@ -4,16 +4,7 @@ views:
     path: system
     badges:
       - entity: person.zhang_maiyun
-      - entity: sensor.battery_state
-      - entity: sensor.battery_level
-      - entity: sensor.iphone_battery_state
-      - entity: sensor.myzs_apple_watch_battery_state
       - entity: person.yuan_dongmei
-      - entity: sensor.battery_state_2
-      - entity: sensor.battery_level_2
-      - entity: sensor.zmys_iphone_battery_state
-      - entity: sensor.yuan_dong_mei_de_ipad_battery_state
-      - entity: sensor.mai_mai_de_ipad_battery_state
     cards:
       - title: Dyson
         type: entities

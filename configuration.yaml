@@ -33,9 +33,6 @@ homeassistant:
         - !secret nw3
         - !secret nw4
 
-http:
-  server_host: "*"
-
 icloud:
   - username: !secret icun
     password: !secret icpw
