@@ -70,7 +70,7 @@ notify:
 person:
 
 recorder:
-  db_url: "postgresql://@/hass"
+  db_url: !secret dburl
   purge_keep_days: 2
   exclude:
     domains:
